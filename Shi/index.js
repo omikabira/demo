@@ -50,3 +50,12 @@ console.log(fullName.length);
 
 console.log(fullName.toUpperCase());
 console.log(fullName.toLowerCase());
+
+//COMMON STRING METHOS
+//lastIndexOf
+
+let email = 'shivanilal4.sl@gmail.com';
+
+let show = email.lastIndexOf('m');
+
+console.log(show);
