@@ -24,13 +24,13 @@ console.log(student);
 
 
 //DATATYPES
-//STRINGS// strings has quotes(single or double doesn't matter)
+//1. STRINGS// strings has quotes(single or double doesn't matter)
 
 let email = 'shivanilal4.sl@gmail.com';
 
 console.log(email);
 
-//STRINGS CONCATENATION// It just means "joining of two values"
+// a. STRINGS CONCATENATION// It just means "joining of two values"
 
 let firstName = 'Shivani';
 let lastName = 'Lal';
@@ -39,23 +39,91 @@ let lastName = 'Lal';
 let fullName = firstName + ' ' + lastName;
 console.log(fullName);
 
-//STRING CHARACTERS// This counts the characters and starts with 0, and is defined with []
+//b. STRING CHARACTERS// This counts the characters and starts with 0, and is defined with []
 console.log(fullName[3]);
 
-//STRING LENGTHS, defines the length of the string
+//c. STRING LENGTHS, defines the length of the string
 
 console.log(fullName.length);
 
-//string methods, defined by () paranthesis.
+//d. string methods, defined by () paranthesis.
 
 console.log(fullName.toUpperCase());
 console.log(fullName.toLowerCase());
 
-//COMMON STRING METHOS
-//lastIndexOf
+//COMMON STRING METHOdS
+//1. lastIndexOf
 
-let email = 'shivanilal4.sl@gmail.com';
+let myEmail = 'shivanilal4.sl@gmail.com';
 
-let show = email.lastIndexOf('m');
+let show = myEmail.lastIndexOf('l');
 
 console.log(show);
+
+//2. Slice
+
+let myName = 'shivani';
+let result = myName.slice(3,6);
+console.log(result);
+
+//3. replace
+
+let lName = "shivanilal";
+let rr = lName.replace('v','m');
+console.log(rr);
+
+//2. NUMBERS
+//math operators= +, =, *, /, **, %
+
+let circle = 10;
+const pi = 3.14;
+console.log(circle, pi);
+
+console.log(2*5);
+
+let showResult = 15 * (10**5);
+console.log(showResult);
+
+//3. ARRAYS
+
+
+let names = ['shi','vi','ohh'];
+console.log(names);
+
+let namestwo = ['shi', 'vi', 'ohh'];
+console.log(namestwo[2]);
+
+//override
+
+namestwo[2] = 'ram';
+console.log(namestwo[2]);
+ console.log(names.length);
+
+ //arrayn methods
+ //a. join
+
+ let nameName = ['shi','va','ni'];
+ let showShow = nameName.join('+');
+ console.log(showShow);
+
+let mmndnc = nameName.join('-');
+console.log(mmndnc);
+
+let abcd = nameName.lastIndexOf('va');
+console.log(abcd);
+
+let efg = nameName.indexOf('ni');
+console.log(efg);
+
+//concat
+
+
+//Here I am concatinating(joining nameName with om prakash kabira
+
+let results = nameName.concat(['om','prakash','kabira']);
+console.log(results);
+
+//push
+
+let resultss = nameName.push('omi');
+console.log(resultss);
