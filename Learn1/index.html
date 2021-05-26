@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS1</title>
+    <script src="index1.js"></script>
+    </head>   
+<body>
+    <h1>Window Alert</h1>
+    <button onclick="myFunction()">Alert</button>
+    <!--<script>
+        function myFunction() {
+        alert("You are ready to start!");
+         }
+    </script>-->
+
+    <h1>Javascript is programming language</h1>
+    <p id="demo">Java script provides the functionality to HTML</p>
+      <button type="button" onclick='document.getElementById("demo").innerHTML ="Hello JavaScript"'>click me</button>
+    <p id="demo1">Call function</p>
+      <button type="button" onclick="myfunction()">Function</button>
+        <script>
+            function myfunction(){
+            document.getElementById('demo1').innerHTML= "Function Called";
+         }
+        </script>
+        <script>
+            document.write(5+6);
+        </script>
+<hr>
+    <h2>Variables are the storage to store data</h2>
+    <p id="var"></p>
+      <script>
+        var x=5;
+        var y=7;
+        var z=11;
+        var total=x+y+z;
+        document.getElementById('var').innerHTML ="TOTAL SUM= "+ total;
+      </script>
+    <p id="var1"></p>
+      <script>
+        var x= "Anjali" + "Maan";
+        var y= 5+8+"5";
+        var final=x+y;
+        document.getElementById('var1').innerHTML= "Final: " + final;
+      </script>
+    <p id="array"></p>
+      <script>
+        var name= ["Anjali", "Nikunj"];
+        document.getElementById('array').innerHTML= name[1];
+      </script>
+    <p id="object"></p>
+      <script>
+          var person={ FirstName:"Anjali", LastName:"Maan", Age:"26"};
+          document.getElementById('object').innerHTML= person.FirstName + "is" + person.Age + "years old.";
+      </script>
+</body>
+</html>
