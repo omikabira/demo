@@ -127,3 +127,7 @@ console.log(results);
 
 let resultss = nameName.push('omi');
 console.log(resultss);
+
+function functionOne(){
+    document.getElementById("demo3").innerHTML="like this";
+}

@@ -5,15 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Javascript Practice</title>
     <h1>Welcome to my page</h1>
+    <script src="index.js"></script>
 </head>
+<body>
+    <!-- innerHTML, changing the text -->
 <h4 id="result">On clicking the button, the html will be changed to</h4>
         <button type="button" onclick='document.getElementById("result").innerHTML="this text"'>Click me </button>
-        <p id="demo">Change the color</p>
+
+<!-- changing the text color, it is the way of incorporating css, style -->
+        <h1 id="demo">Change the color</p>
         <button type="button" onclick='document.getElementById("demo").style.color="red"'>Click Here
         </button>
-<body>
-    <script src="index.js">
-        
-    </script>
+
+        <h2>Display text or hide it</h2>
+        <p id="demo2">This display hides the text</p>
+        <button type="button" onclick='document.getElementById("demo2").style.display="none"'>Click me</button>
+
+<!-- Call a function -->
+        <p id="demo3">Function called</p>
+    <button type="button" onclick="functionOne()">click here</button>
+    
+    <!-- using document.write when we need dynamic things on our page or something calculated on our page -->
+    <p>Perform something</p>
+    <span.style.border="10px solid red" onclick="functionTwo()">Click me</span>
 </body>
+<script>
+    function functionOne(){
+    document.getElementById("demo3").innerHTML="like this";
+    }
+    // document.write(6+6);
+    function functionTwo(){
+        document.write(5+7);
+    }
+</script>
 </html>
