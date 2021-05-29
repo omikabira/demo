@@ -6,11 +6,15 @@
     <title>Javascript Practice</title>
     <h1>Welcome to my page</h1>
     <script src="index.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- innerHTML, changing the text -->
 <h4 id="result">On clicking the button, the html will be changed to</h4>
         <button type="button" onclick='document.getElementById("result").innerHTML="this text"'>Click me </button>
+<br><br><br>
 
 <!-- changing the text color, it is the way of incorporating css, style -->
         <h1 id="demo">Change the color</p>
@@ -27,7 +31,7 @@
     
     <!-- using document.write when we need dynamic things on our page or something calculated on our page -->
     <p>Perform something</p>
-    <span.style.border="10px solid red" onclick="functionTwo()">Click me</span>
+    <span onclick="functionTwo()">Click me</span>
 </body>
 <script>
     function functionOne(){
