@@ -32,7 +32,18 @@
     <!-- using document.write when we need dynamic things on our page or something calculated on our page -->
     <p>Perform something</p>
     <span onclick="functionTwo()">Click me</span>
-</body>
+<br><br>
+
+<span onclick="functionThree()">Click Me</span>
+
+<p id="demo4"></p>
+
+<p id="demo5"></p>
+
+<p id="demo6"></p>
+<p id="demo7"></p>
+<p id="demo8"></p>
+
 <script>
     function functionOne(){
     document.getElementById("demo3").innerHTML="like this";
@@ -41,5 +52,25 @@
     function functionTwo(){
         document.write(5+7);
     }
+    //WINDOW ALERT
+    window.alert(5+5); //ALERT and WINDOW.ALERT is same, you can even skip window from alert and the result will be same
+
+    //WINDOW.PRINT
+    function functionThree(){
+        window.print();
+    }
+    document.getElementById("demo4").innerHTML="Hello world";
+    document.getElementById("demo5").innerHTML= 15*(10**5);
+    document.getElementById("demo6").innerHTML='shivani'+' ' +'lal';
+
+    var x= 5;
+    var y= 6;
+    var z= x+y;
+    document.getElementById("demo7").innerHTML="The total is" + z;
+
+    var x1= 5;
+    var y1= 5;
+    var z1= x1-y1;
+    document.getElementById("demo8").innerHTML="The answer is" - z1;
 </script>
 </html>
