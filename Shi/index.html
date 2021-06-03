@@ -44,6 +44,22 @@
 <p id="demo7"></p>
 <p id="demo8"></p>
 
+<!--BOOLEAN FUNCTION-->
+<p id="demo9"></p>
+<button type="button" onclick="functionfour()">Click Here</button>
+
+<p id="demo10">If we are not assigning any value to variable or even if we are assigning it 0, it will return the result of boolean as false</p>
+<button type="button" onclick="functionfive()">Click for result</button>
+
+<!--Conditional (Ternary) Operator-->
+
+<!--OBJECTS-->
+<p id="demo11">Object example</p>
+
+<!-- OBJECT METHODS -->
+<!-- function() {return this.firstName + " " + this.lastName;} -->
+<p id="demo12">These are object methods</p>
+
 <script>
     function functionOne(){
     document.getElementById("demo3").innerHTML="like this";
@@ -72,5 +88,47 @@
     var y1= 5;
     var z1= x1-y1;
     document.getElementById("demo8").innerHTML="The answer is" - z1;
+
+    //BOOLEAN FUNCTION
+    function functionfour(){
+    document.getElementById("demo9").innerHTML=Boolean(10==10);
+    }
+
+    function functionfive(){
+    var a=0;
+    var b=9;
+    document.getElementById("demo10").innerHTML=Boolean(a>b);
+    }
+
+    //Conditional (Ternary) Operator
+    //Syntax :
+    //variablename = (condition) ? value1:value2
+    
+ //OBJECTS, car here is property in object and fourwheeler is called property value in object. 
+
+ var car = {
+     type:"fourwheeler",
+     color:"red",
+     model:"latest",
+ };
+ //Accessing Object Properties
+ //objectName.propertyName OR objectName["propertyName"]
+
+ document.getElementById("demo11").innerHTML="The color of car is" + ' '+ car.color;
+
+ //OBJECT METHODS
+ //function() {return this.firstName + " " + this.lastName;}
+
+ var person={
+     firstname:"shivani",
+     lastname:"lal",
+     fullname: function(){
+         return this.firstname + ' '+ this.lastname;
+     }
+     };
+     document.getElementById("demo12").innerHTML= person.fullname();
+ 
+
+
 </script>
 </html>
